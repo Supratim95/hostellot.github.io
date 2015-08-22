@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+.jumbotron
+{
+	margin-top: 30px;
+		
+}
+.bg
+{
+	position: absolute;
+	height: 760px;
+	width: 100%;
+	
+	
+	background-image: url(../assets/bg/bg1.jpg);
+	background-color: rgba(255, 255, 255, 0);
+	background-repeat: no-repeat;
+	background-position: 2px 135px;
+	background-blend-mode: color;
+		
+}
+
+@keyframes fadebg
+{
+	0%{
+		background-image:url(../assets/bg/bg1.jpg)
+	}
+	30%{
+		background-image:url(../assets/bg/bg1.jpg)
+	}
+	100%
+	{
+		background-image:url(../assets/bg/bg2.jpg)
+	}
+}
+
+.bg.change
+{
+	animation: fadebg 1s;
+	background-image:url(../assets/bg/bg2.jpg);
+}
+.band
+{
+	position: absolute;
+	height: 760px;
+	width: 100%;
+	
+	background: url(../assets/bgBand/0.png);
+	background-repeat: no-repeat;
+	background-position: 2px 135px;
+		
+}
+
+#hostelSelect
+{
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
